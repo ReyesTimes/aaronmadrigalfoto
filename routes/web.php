@@ -12,9 +12,9 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return view( 'index' );
 });
 
 $router->get('/foo', function () {
-    return 'Hello World';
+    return view( 'example' );
 });
