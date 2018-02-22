@@ -11,10 +11,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return view( 'index' );
+$router->get( '/', function () use ( $router ) {
+    return view( 'index', [ 'hola' => 10 ] );
 });
 
-$router->get('/foo', function () {
-    return view( 'example' );
-});
+$router->get( '/foo', 'Controller@example' );

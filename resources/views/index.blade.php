@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>
-        Aarón madrigal fotografo.
+        Aarón madrigal fotografo. {{ $hola }}
     </h1>
 </body>
 </html>
