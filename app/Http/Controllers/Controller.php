@@ -13,6 +13,10 @@ class Controller extends BaseController
     }
 
     public function example() {
-        return view( 'example' );
+        return view( 'example', [ 'example' => 20 ] );
+    }
+
+    public function show() {
+        return view( 'index' );
     }
 }

@@ -10,7 +10,12 @@
 </head>
 <body>
     <h1>
-        Aarón madrigal fotografo. {{ $hola }}
+        mmm
+        @extends( 'layouts.app' )
+
+        @section( 'content' )
+            adios
+        @endsection
     </h1>
 </body>
 </html>

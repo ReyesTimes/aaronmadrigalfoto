@@ -12,8 +12,13 @@ class NewController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show()
-    {
-        return view( 'example' );
-    }
+     public function __construct()
+     {
+         $this->example = '20';
+     }
+
+     public function show()
+     {
+         return view( 'index', [ 'example' => 20 ] );
+     }
 }
